@@ -123,7 +123,6 @@ a:hover {
 .d-bloc .navbar a,
 .d-bloc .navbar-brand,
 .d-bloc a .icon-sm,
-.d-bloc a .icon-md,
 .d-bloc a .icon-lg,
 .d-bloc a .icon-xl,
 .d-bloc h1 a,
@@ -365,11 +364,12 @@ a:hover {
 @media (min-width: 768px) {
     .site-navigation {
         position: absolute;
-        top: 50%;
         right: 20px;
+        top: 50%;
         transform: translate(0, -50%);
         -webkit-transform: translateY(-50%);
     }
+
     .nav > li .dropdown-menu a,
     .nav > li .dropdown-menu a:hover {
         color: #484848;
@@ -436,6 +436,7 @@ nav .caret {
 }
 
 .mg-md {
+    color: #2D1810 !important;
     margin-top: 10px;
     margin-bottom: 20px;
 }
@@ -477,6 +478,7 @@ button {
 
 .icon-md {
     font-size: 30px!important;
+    color: #000000;
 }
 
 .icon-lg {
@@ -677,7 +679,7 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 14px;
 }
 
 .tight-width-whitespace {
@@ -739,6 +741,14 @@ h4 {
     color: #FFFFFF!important;
 }
 
+.black {
+    color: #000000 !important;
+}
+
+.blue {
+    color: #000072 !important;
+}
+
 .portfolio-thumb {
     margin-bottom: 24px;
 }
@@ -775,7 +785,7 @@ h4 {
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #ECE0DB !important;
 }
 
 .btn-atomic-tangerine {
