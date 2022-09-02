@@ -489,6 +489,10 @@ button {
     text-shadow: 0 1px 2px rgba(0, 0, 0, .3);
 }
 
+.image-resize-mode{
+    border-radius: 45px;
+}
+
 .panel-sq,
 .panel-sq .panel-heading,
 .panel-sq .panel-footer {
@@ -820,7 +824,7 @@ h4 {
 }
 
 .bg-dots-bg {
-    background-image: url("img/dots-bg.png");
+    background-image: url("img/dots-bg.avif");
 }
 
 .bg-lines-h2-bg {
@@ -828,11 +832,11 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url("img/agence-la-panthere.jpg");
+    background-image: url("img/agence-la-panthere.avif");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.bmp");
+    background-image: url("img/image-de-presentation.avif");
 }
 
 @media (max-width: 1024px) {
