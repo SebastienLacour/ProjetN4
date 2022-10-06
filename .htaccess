@@ -17,9 +17,9 @@ ExpiresByType image/avif "access plus 1 year"
 AddType text/css .min.css
 ExpiresByType text/min.css "access plus 1 month"
 AddType text/woff .woff
-ExpiresByType text/woff
+ExpiresByType text/woff "access plus 1 month"
 addType  image/webp .webp
-ExpiresByType image/webp
+ExpiresByType image/webp "access plus 1 mointh"
 ExpiresDefault "access plus 2 days"
 </IfModule>
 # END Expires Headers
