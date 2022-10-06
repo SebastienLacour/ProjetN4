@@ -1,21 +1,26 @@
 
-# BEGIN Cache-Control Headers
-<IfModule mod_headers.c>
-<FilesMatch "\.(ico|jpeg|png|gif|swf|gz|avif|webp|woff)$">
-Header set Cache-Control "max-age=2592000, public"
-</FilesMatch>
-<FilesMatch "\.(js)$">
-Header set Cache-Control "max-age=2592000, private"
-</FilesMatch>
-<filesMatch "\.(css)$">
-Header set Cache-control "max-age= 7200, public"
-</filesMatch>
-<filesMatch "\.(html|htm)$">
-Header set Cache-Control "max-age=7200, public"
-</filesMatch>
-# Enleve le cache pour les ressources dynamiques
-<FilesMatch "\.(pl|php|cgi|spl|scgi|fcgi)$">
-Header unset Cache-Control
-</FilesMatch>
+# BEGIN Expires Headers
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access plus 1 year"
+ExpiresByType image/jpeg "access plus 1 year"
+ExpiresByType image/gif "access plus 1 year"
+ExpiresByType image/png "access plus 1 year"
+ExpiresByType image/svg "acces plus 1 year"
+ExpiresByType text/css "access plus 1 month"
+ExpiresByType application/pdf "access plus 1 month"
+ExpiresByType text/x-javascript "access plus 1 month"
+ExpiresByType application/x-shockwave-flash "access plus 1 month"
+ExpiresByType image/x-icon "access plus 1 year"
+AddType image/avif .avif
+ExpiresByType image/avif "access plus 1 year"
+AddType text/css .min.css
+ExpiresByType text/min.css "access plus 1 month"
+AddType text/woff .woff
+ExpiresByType text/woff
+addType  image/webp .webp
+ExpiresByType image/webp
+ExpiresDefault "access plus 2 days"
 </IfModule>
-# END Cache-Control Headers
+# END Expires Headers
+
