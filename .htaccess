@@ -2,6 +2,7 @@
 # BEGIN Expires Headers
 <IfModule mod_expires.c>
 ExpiresActive On
+ExpiresByType text/js "access plus 1 year"
 ExpiresByType image/jpg "access plus 1 year"
 ExpiresByType image/jpeg "access plus 1 year"
 ExpiresByType image/gif "access plus 1 year"
@@ -16,6 +17,8 @@ AddType image/avif .avif
 ExpiresByType image/avif "access plus 1 year"
 AddType text/css .min.css
 ExpiresByType text/min.css "access plus 1 month"
+AddType text/js .min.js
+ExpiresByType text/min.js "access plus 1 month"
 AddType text/woff .woff
 ExpiresByType text/woff "access plus 1 month"
 addType  image/webp .webp
